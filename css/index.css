@@ -1,0 +1,54 @@
+:root {
+  --white: #fff;
+  --black: #000;
+
+  --color-first: #E56399;
+  --color-second: #545775;
+  --color-hover: #aa295f;
+}
+
+header {
+  background: var(--color-second);
+  border-bottom: 10px solid var(--black);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-size: 20px;
+  font-family: 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+a::before:not(:last-child) {
+  content: "";
+  display: inline-block;
+  background: var(--color-first);
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 0 0;
+}
+
+#button {
+  display: inline-block;
+  background-color: var(--color-first);
+  padding: 18px 20px;
+  box-shadow: 5px 5px 0 var(--black);
+  margin-right: 0;
+  transition: 1s all;
+}
+
+#button:hover {
+  background: var(--color-hover);
+}
