@@ -31,7 +31,7 @@ a {
   margin-right: 30px;
 }
 
-a::before:not(:last-child) {
+a:not(:last-child)::before {
   content: "";
   display: inline-block;
   background: var(--color-first);
